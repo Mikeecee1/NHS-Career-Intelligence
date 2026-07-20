@@ -2,6 +2,9 @@
 
 > A cloud-based data engineering project that transforms NHS vacancy data into an intelligent, searchable career knowledge base using AWS, Databricks and MongoDB.
 
+> The NHS Career Intelligence Platform is a cloud-based data engineering solution that ingests NHS vacancy data, stores it in a scalable data lake, transforms it using Apache Spark in Databricks, and loads enriched job documents into MongoDB. The platform enables workforce analytics today while providing a foundation for future semantic search and AI-powered career guidance.
+
+
 ---
 
 ## Table of Contents
