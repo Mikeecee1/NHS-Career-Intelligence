@@ -161,26 +161,31 @@ Licence
 
 ```text
 NHS-Career-Intelligence/
-
 │
-
+├── .venv/
+├── config/
 ├── data/
-
+│   ├── raw/
+│   ├── processed/
+│   └── exports/
 ├── docs/
-
-├── exports/
-
-├── notebooks/
-
-├── src/
-
-├── tests/
-
 ├── images/
-
+├── notebooks/
+├── src/
+│   ├── extract/
+│   ├── transform/
+│   ├── load/
+│   ├── database/
+│   ├── analytics/
+│   └── utils/
+├── tests/
+├── .env
+├── .env.example
+├── .gitignore
 ├── README.md
-
-└── requirements.txt
+├── requirements.txt
+└── app.py
+└── config.py
 ```
 
 ---
