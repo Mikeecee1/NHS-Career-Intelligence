@@ -32,9 +32,12 @@ htmlcov/
 
 # Logs
 *.log
+logs/*
+!logs/.gitkeep
 
 # macOS
 .DS_Store
 
 # Windows
 Thumbs.db
+

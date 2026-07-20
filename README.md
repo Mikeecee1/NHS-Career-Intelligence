@@ -1,22 +1,29 @@
 # NHS Career Intelligence Platform
 
-> A cloud-based data engineering project that transforms NHS vacancy data into an intelligent, searchable career knowledge base using AWS, Databricks and MongoDB.
-
-> The NHS Career Intelligence Platform is a cloud-based data engineering solution that ingests NHS vacancy data, stores it in a scalable data lake, transforms it using Apache Spark in Databricks, and loads enriched job documents into MongoDB. The platform enables workforce analytics today while providing a foundation for future semantic search and AI-powered career guidance.
+> The NHS Career Intelligence Platform is a cloud-native data engineering solution that transforms NHS recruitment data into an intelligent career knowledge base. Built using AWS S3, Databricks, MongoDB and Python, the platform supports workforce analytics today while providing a foundation for future semantic search and AI-powered career guidance.
 
 
 ---
 
 ## Table of Contents
 
+<details>
+<summary>Click to expand</summary>
+
+- [Project Status](#project-status)
+- [Key Features](#key-features)
+- [Business Scenario](#business-scenario)
 - [Overview](#overview)
 - [Business Problem](#business-problem)
 - [Project Objectives](#project-objectives)
 - [System Architecture](#system-architecture)
 - [Technology Stack](#technology-stack)
+- [Technology Choices](#technology-choices)
+- [Architecture Principles](#architecture-principles)
 - [Data Sources](#data-sources)
 - [Project Structure](#project-structure)
 - [Data Model](#data-model)
+- [Data Flow](#data-flow)
 - [ETL Pipeline](#etl-pipeline)
 - [Data Processing](#data-processing)
 - [Analytics & Insights](#analytics--insights)
@@ -25,9 +32,48 @@
 - [Installation & Setup](#installation--setup)
 - [Usage](#usage)
 - [Project Roadmap](#project-roadmap)
+- [Risks & Assumptions](#risks--assumptions)
 - [Lessons Learned](#lessons-learned)
 - [Future Improvements](#future-improvements)
 - [References](#references)
+
+</details>
+
+---
+
+## Project Status
+
+| Stage | Status |
+|--------|:------:|
+| Project Design | ✅ Complete |
+| Environment Setup | ✅ Complete |
+| Data Ingestion | 🔄 In Progress |
+| ETL Pipeline | ⏳ Planned |
+| MongoDB Integration | ⏳ Planned |
+| Analytics | ⏳ Planned |
+| Semantic Search | 🚀 Future Enhancement |
+
+---
+
+## Key Features
+
+- Cloud-native ETL pipeline
+- Amazon S3 Data Lake
+- Databricks (Apache Spark) data processing
+- MongoDB document database hosted on EC2
+- Python data engineering workflows
+- SQL analytics
+- Skill extraction from job descriptions
+- Career intelligence reporting
+- Designed for future Semantic Search and RAG
+
+---
+
+## Business Scenario
+
+NHS organisations publish thousands of job vacancies containing valuable information about skills, career progression and recruitment trends. However, this information is spread across individual job adverts, making large-scale analysis difficult.
+
+The NHS Career Intelligence Platform provides a modern cloud-based data platform that ingests, transforms and enriches NHS recruitment data. The platform enables workforce analytics today while laying the foundations for AI-powered career guidance through semantic search and Retrieval-Augmented Generation (RAG).
 
 ---
 
@@ -133,6 +179,33 @@ MongoDB      Analytics
 
 ---
 
+# Technology Choices
+
+| Decision | Rationale |
+|----------|-----------|
+| MongoDB | Flexible document structure for rich job adverts and future embeddings |
+| Amazon S3 | Data lake for raw and processed datasets |
+| Databricks | Distributed ETL and feature engineering using Spark |
+| EC2 | Self-managed MongoDB deployment and cloud infrastructure experience |
+| SQL Server | Structured reporting and analytical queries |
+| Python | Primary ETL and orchestration language |
+
+---
+
+# Architecture Principles
+
+The platform has been designed around several core principles:
+
+- Separation of extraction, transformation and loading stages
+- Configuration-driven deployment
+- Modular Python architecture
+- Cloud-first design
+- Reproducible data processing
+- Extensible document model
+- Future support for AI workloads
+
+---
+
 # Data Sources
 
 ## Primary Dataset
@@ -217,6 +290,10 @@ Description
 ### Metadata
 
 Description
+
+---
+
+# Data Flow
 
 ---
 
@@ -380,6 +457,23 @@ Semantic Search
 ## Phase 4
 
 RAG
+
+---
+
+# Risks & Assumptions
+
+## Assumptions
+
+- NHS dataset remains publicly available.
+- AWS Free Tier resources are sufficient.
+- Databricks Community Edition provides adequate processing capacity.
+
+## Risks
+
+- Dataset schema changes.
+- Missing salary information.
+- Inconsistent job descriptions.
+- Large datasets may require optimisation.
 
 ---
 
