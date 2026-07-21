@@ -6,9 +6,9 @@ RAW_DATA = PROJECT_ROOT / "data" / "raw" / "jobs_raw.csv"
 
 # Cleaning options
 CLEANING_OPTIONS = {
-    "REMOVE_DUPLICATES": True,
-    "STANDARDISE_COLUMNS": True,
-    "DROP_EMPTY_ROWS": False,
-    "CONVERT_DATES": True,
-    "CONVERT_SALARY": True,
+    "remove_duplicates": True,
+    "standardise_columns": True,
+    "drop_empty_rows": False,
+    "convert_dates": True,
+    "convert_salary": True,
 }
